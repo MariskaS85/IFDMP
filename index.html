@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css"/>
+        <script src="assets/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The HiddenHermit</title>
+    </head>
+
+    <body>
+        <header> 
+        </header>
+     
+        <section>
+        <!-- Navigation - menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">About</a>
+                            <a href="#">Scor e</a>
+                            <a href="#">Hermit</a>
+                        </div>
+                </div>
+                <button style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</button>
+            
+        
+        </section> 
+
+
+        <!--Hermit Button onclick="moveHermit()" onclick="foundHermit();foundMessage()"-->
+        <button type="button" class="hermit" id="myBtn" onclick="foundHermit();foundMessage()" innerHTML = "Found Him!">.</button>
+    </body>
+     
+
+    <footer>
+    </footer>
+
+</html>
