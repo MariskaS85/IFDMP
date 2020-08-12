@@ -2,6 +2,23 @@
 
 # IFDMP
 
+Find the Hidden Hermit
+
+As the name suggest, you must find the Hidden hermit. This is an interactive game for the Company Hidden Hermit.
+The first 10 times the Hermit will be width = 50px 
+Backend: The hidden hermit is a button. 
+-	This button will disappear once clicked on and will appear on a random other location. 
+-	After you have found the Hermit 10 times, the size will decrease with 1px. With a minimum of 1px
+
+Things to make:
+	Make a button appear like a Hermit
+	Hide the Button once clicked
+	Loop the appearance of the button
+	If Clicked make a different button appear somewhere else
+	Every time the button is clicked ++ the count 
+	If count == 10 decrease size of button
+
+
 For the full size image background:
 https://css-tricks.com/perfect-full-page-background-image/
 
