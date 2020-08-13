@@ -15,18 +15,50 @@ function closeNav() {
 
 
 function foundHermit(){
-document.getElementById("myBtn").innerHTML = "Found Him!";
+    document.getElementById("myBtn").innerHTML = "Found Him!";
 }
 
-function foundMessage() {
+function foundMessage(){
     setTimeout(function(){ alert("Are you ready for the next challenge?"); }, 2000);
 }
 
+function gone(){
+  $("button.hermit").hide();
+  };
 
 
-//var btn = document.getElementById("myBtn");
 
-// btn.addEventListener("click", foundHermit);
-// btn.addEventListener("click", foundMessage);
 
+var btn = document.getElementById("myBtn");
+
+ //btn.addEventListener("click", foundHermit);
+ btn.addEventListener("click", foundMessage);
+ btn.addEventListener("click", gone);
+
+$('#test').click(function() {
+    var docHeight = $(document).height(),
+        docWidth = $(document).width(),
+        $div = $('#test'),
+        divWidth = $div.width(),
+        divHeight = $div.height(),
+        heightMax = docHeight - divHeight,
+        widthMax = docWidth - divWidth;
+    
+    $div.css({
+        left: Math.floor( Math.random() * widthMax ),
+        top: Math.floor( Math.random() * heightMax )
+    });
+});
+
+
+
+
+ 
+
+ /*
+ $(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
 */

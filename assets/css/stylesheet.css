@@ -91,8 +91,9 @@ button.move {
 }
 
 #test {
+    content: url("../../assets/images/hermit.png");
     position:absolute;
     width:100px;
     height:70px;
-    background-color:#d2fcd9;
+    background-color: transparent;
 }
