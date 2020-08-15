@@ -46,16 +46,27 @@ $('#test').click(function() {
     
     $div.css({
         left: Math.floor( Math.random() * widthMax ),
-        top: Math.floor( Math.random() * heightMax )
-    });
+        top: Math.floor( Math.random() * heightMax ),
+    });  
+    $( this ).css({
+        width: divWidth * 0.9,
+        height: divHeight * 0.9,      
+});   
 });
 
 
+/*
 
+var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
 
  
 
- /*
+
  $(document).ready(function(){
   $("button").click(function(){
     $("#test").hide();

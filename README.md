@@ -35,3 +35,6 @@ http://jsfiddle.net/MythOfEchelon/uPN9E/1/
 
 move on click:
 http://jsfiddle.net/5mvKE/
+
+Scrolling text in About:
+https://www.html.am/html-codes/marquees/css-scrolling-text.cfm

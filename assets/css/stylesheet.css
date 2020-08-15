@@ -71,7 +71,7 @@ div {
 
 }
 
-*/
+
 
 button.hermit { 
             background: url("../../assets/images/hermit.png"); 
@@ -84,16 +84,74 @@ button.hermit {
             width: 50px;
             position: absolute;
         } 
-
-    
-button.move {
-    margin-left: 50px;
-}
+*/
 
 #test {
     content: url("../../assets/images/hermit.png");
     position:absolute;
-    width:100px;
-    height:70px;
+    width:200px;
+    height:px;
     background-color: transparent;
+}
+
+
+/* Scroling text in about */
+.scroll-up {
+ height: 300px;	
+ overflow: hidden;
+ position: relative;
+ background: transparent;
+}
+.scroll-up p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-up 50s linear infinite;
+ -webkit-animation: scroll-up 50s linear infinite;
+ animation: scroll-up 50s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+
+#counter {
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  border: 1px solid lightblue;
+  color: black;
+}
+
+#button.play {
+
 }
