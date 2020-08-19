@@ -1,0 +1,218 @@
+/* ----------------------------------------------- Body and background */
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../../assets/images/beach.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* ----------------------------------------------- Side Navigation */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;§
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#herm {
+    content: url("../../assets/images/hermit.png");
+    position:absolute;
+    width:200px;
+    height:100px;
+    background-color: transparent;
+    margin: 20px;
+    
+}
+
+#crab {
+    content: url("../../assets/images/Crab1.png");
+    position:absolute;
+    width:200px;
+    height:100px;
+    background-color: transparent;
+    margin: 20px;
+}
+
+/* --------------------------------------Scrolling text in About page NOT MINE*/
+
+.scroll-up {
+ height: 80%;	
+ overflow: hidden;
+ position: relative;
+ background: transparent;
+
+}
+.scroll-up p {
+ position: center;
+ float: left;
+ width: 90%;
+ height: 100%;
+ padding: 5% 5% 5% 5%;
+ bottom: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-up 20s linear infinite;
+ -webkit-animation: scroll-up 20s linear infinite;
+ animation: scroll-up 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+
+/* ----------------------------------------------- Score counter */
+
+#counter {
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  color: black;
+  pointer-events: none;
+}
+
+/* ----------------------------------------------- Level counter*/
+
+#level {
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  color: black;
+  pointer-events: none;
+}
+
+/* ----------------------------------------------- About page */
+
+p {
+    padding: 50px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+}
+
+#about {
+    overflow: hidden;
+    top: 100px;
+    height: 80%;
+    margin: 10px;
+}
+
+button {
+    font-size:20px;
+    cursor:pointer;
+}
+
+button.play {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    float: right;
+    margin: 25px;
+}
+
+
+.logo {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#missing {
+    content: url("../../assets/images/missing.png");
+    position: relative;
+    width: 150px;
+    height: 150px;
+    float: left;
+    bottom: 10%;
+    margin: 10%;
+}
+
+#persumer {
+    content: url("../../assets/images/persumer.png");
+    position: relative;
+    width: 150px;
+    height: 150px;
+    float: right;
+    bottom: 10%;
+    margin: 10%;
+}
