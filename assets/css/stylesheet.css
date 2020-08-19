@@ -1,17 +1,21 @@
+/* ----------------------------------------------- Body and background */
+
 body { 
   background: url("../../assets/images/beach.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: -1;
 }
+
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 
-/* ------------------------------------------------------------------- Side Navigation */
+/* ----------------------------------------------- Side Navigation */
 
 
 .overlay {
@@ -65,7 +69,8 @@ body {
     
 }
 
-/* Scroling text in about */
+/* --------------------------------------Scrolling text in About page */
+
 .scroll-up {
  height: 300px;	
  overflow: hidden;
@@ -110,6 +115,8 @@ body {
  }
 }
 
+/* ----------------------------------------------- Score counter */
+
 #counter {
   padding: 20px;
   bottom: 0;
@@ -120,6 +127,8 @@ body {
   color: black;
   pointer-events: none;
 }
+
+/* ----------------------------------------------- Level counter*/
 #level {
   padding: 20px;
   bottom: 0;
@@ -131,6 +140,7 @@ body {
   pointer-events: none;
 }
 
+/* ----------------------------------------------- About page */
 #about {
     padding: 5rem;
   position: absolute;
