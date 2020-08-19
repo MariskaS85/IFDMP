@@ -21,16 +21,13 @@ body {
   z-index: -1;
 }
 
-
-
 /* ----------------------------------------------- Side Navigation */
-
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1;§
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -86,7 +83,7 @@ body {
     margin: 20px;
 }
 
-/* --------------------------------------Scrolling text in About page */
+/* --------------------------------------Scrolling text in About page NOT MINE*/
 
 .scroll-up {
  height: 80%;	
@@ -149,6 +146,7 @@ body {
 }
 
 /* ----------------------------------------------- Level counter*/
+
 #level {
   padding: 20px;
   bottom: 0;
@@ -161,6 +159,7 @@ body {
 }
 
 /* ----------------------------------------------- About page */
+
 p {
     padding: 50px;
   position: absolute;
@@ -169,66 +168,51 @@ p {
   color: black;
   display: inline-block;
 }
+
 #about {
     overflow: hidden;
     top: 100px;
     height: 80%;
     margin: 10px;
 }
-.imgHerm {
-    background-image: url(c);
-    padding: 20px;
-  bottom: 0;
-  left: 0;
-  position: relative;
-}
+
 button {
     font-size:20px;
     cursor:pointer;
-    }
+}
 
 button.play {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  color: black;
-display: inline-block;
-float: right;
-margin: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    float: right;
+    margin: 25px;
 }
 
 
 .logo {
-  bottom: 0;
-  width: 100%;
-  position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
 }
 
- #missing {
-     content:url("../../assets/images/missing.png");
-      position:relative;
+#missing {
+    content: url("../../assets/images/missing.png");
+    position: relative;
     width: 150px;
-    height:150px;
-    float:left;
+    height: 150px;
+    float: left;
     bottom: 10%;
     margin: 10%;
 }
 
 #persumer {
-    content:url("../../assets/images/persumer.png");
-      position:relative;
+    content: url("../../assets/images/persumer.png");
+    position: relative;
     width: 150px;
-    height:150px;
+    height: 150px;
     float: right;
     bottom: 10%;
     margin: 10%;
-}
-
-#contactform{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 250px;
-    bottom: 50%;
-    left: 35%;
-    overflow: hidden;
 }
