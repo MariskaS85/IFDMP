@@ -3,36 +3,42 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <!--  Hermit  -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css"/>
+        <!--  Hermit  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Hidden ermit</title>
+        <title>The Hidden Hermit</title>
     </head>
 
     <body>
     
         <header> 
         </header>
-    <!--Hermit Button onclick="moveHermit()" onclick="foundHermit();foundMessage()" -->
+<!--  Hermit  -->
 
-        <div id="test">
-            <button type="button" class="hermit" id="myBtn"></button>
-        </div>
-       
+        <div>
+            <div id="herm" class="hermit">
+            </div>
+       </div>
+<!--  Navigation - menu  -->
         <section>
-        <!-- Navigation - menu -->
-                <div id="myNav" class="overlay">
+               <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                            <a href="#">About</a>
-                            <a href="#">Score</a>
-                            <a href="#">H emtt</a>
+                            <a href="herm.html">Herm</a>
+                            <a href="#">highScore</a>
+                            <a href="about.html">About</a>
                         </div>
                 </div>
+
                 <button style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</button>      
         </section>  
+<div id="level">First level</div>
+<!--  Click Counter onclick="store()" <button onclick="highScore()">click</button> -->
+        <div  id="counter" class="score">Can you find Herm?</div>
 
-        <div id="counter">0</div>
         
      <script src="assets/script.js"></script>
     </body>

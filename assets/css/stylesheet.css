@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-color: lightblue;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -55,45 +55,15 @@ body {
   font-size: 60px;
 }
 
-/* ------------------------------------------------------------------- Option 1 random location hermit 
-
-
-
-div {
-    float: left;
-}
-
-#hermit {
-    background-image: url("../../assets/images/hermit.png");
-}
-
-#page_Wrapper {   
-
-}
-
-
-
-button.hermit { 
-            background: url("../../assets/images/hermit.png"); 
-            background-size: cover; 
-            font-size: 2rem; 
-            color: #c2b280;
-            margin: none;
-            border: none;
-            outline: none;
-            width: 50px;
-            position: absolute;
-        } 
-*/
-
-#test {
+#herm {
     content: url("../../assets/images/hermit.png");
     position:absolute;
     width:200px;
-    height:px;
+    height:100px;
     background-color: transparent;
+    margin: 20px;
+    
 }
-
 
 /* Scroling text in about */
 .scroll-up {
@@ -145,13 +115,27 @@ button.hermit {
   bottom: 0;
   right: 0;
   position: absolute;
-  text-shadow: 1px 1px 1px #202020;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18pt;
-  border: 1px solid lightblue;
   color: black;
+  pointer-events: none;
+}
+#level {
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  color: black;
+  pointer-events: none;
 }
 
-#button.play {
+#about {
+    padding: 5rem;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  color: black;
 
 }

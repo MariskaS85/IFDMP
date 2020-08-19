@@ -25,16 +25,17 @@ https://css-tricks.com/perfect-full-page-background-image/
 Navigation overlay:
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
 
-Div on random location on screen:
-https://stackoverflow.com/questions/4796743/random-position-of-divs-in-javascript
-or 
-http://www.mendoweb.be/blog/javascript-random-element-position/
-'
 Change location of Hermit
 http://jsfiddle.net/MythOfEchelon/uPN9E/1/
 
 move on click:
 http://jsfiddle.net/5mvKE/
 
+Click Counter:
+https://codepen.io/juliogcampos/pen/BzdjwY
+
 Scrolling text in About:
 https://www.html.am/html-codes/marquees/css-scrolling-text.cfm
+
+Highscore:
+https://stackoverflow.com/questions/29370017/adding-a-high-score-to-local-storage
