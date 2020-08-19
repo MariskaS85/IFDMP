@@ -1,18 +1,26 @@
 /* ----------------------------------------------- Body and background */
-
-body { 
-  background: url("../../assets/images/beach.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -1;
+body, html {
+  height: 100%;
 }
-
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.bg {
+  /* The image used */
+  background-image: url("../../assets/images/beach.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 
 
 /* ----------------------------------------------- Side Navigation */
@@ -69,19 +77,31 @@ body {
     
 }
 
+#crab {
+    content: url("../../assets/images/Crab1.png");
+    position:absolute;
+    width:200px;
+    height:100px;
+    background-color: transparent;
+    margin: 20px;
+}
+
 /* --------------------------------------Scrolling text in About page */
 
 .scroll-up {
- height: 300px;	
+ height: 80%;	
  overflow: hidden;
  position: relative;
  background: transparent;
+
 }
 .scroll-up p {
- position: absolute;
- width: 100%;
+ position: center;
+ float: left;
+ width: 90%;
  height: 100%;
- margin: 0;
+ padding: 5% 5% 5% 5%;
+ bottom: 0;
  line-height: 50px;
  text-align: center;
  /* Starting position */
@@ -89,9 +109,9 @@ body {
  -webkit-transform:translateY(100%);	
  transform:translateY(100%);
  /* Apply animation to this element */	
- -moz-animation: scroll-up 50s linear infinite;
- -webkit-animation: scroll-up 50s linear infinite;
- animation: scroll-up 50s linear infinite;
+ -moz-animation: scroll-up 20s linear infinite;
+ -webkit-animation: scroll-up 20s linear infinite;
+ animation: scroll-up 20s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-up {
@@ -141,11 +161,70 @@ body {
 }
 
 /* ----------------------------------------------- About page */
-#about {
-    padding: 5rem;
+p {
+    padding: 50px;
   position: absolute;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18pt;
+  font-size: 20px;
   color: black;
+  display: inline-block;
+}
+#about {
+    overflow: hidden;
+    top: 100px;
+    height: 80%;
+    margin: 10px;
+}
+.imgHerm {
+    background-image: url(c);
+    padding: 20px;
+  bottom: 0;
+  left: 0;
+  position: relative;
+}
+button {
+    font-size:20px;
+    cursor:pointer;
+    }
+
+button.play {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+display: inline-block;
+float: right;
+margin: 25px;
+}
+
+
+.logo {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+ #missing {
+     content:url("../../assets/images/missing.png");
+      position:relative;
+    width: 150px;
+    height:150px;
+    float:left;
+    bottom: 10%;
+    margin: 10%;
+}
+
+#persumer {
+    content:url("../../assets/images/persumer.png");
+      position:relative;
+    width: 150px;
+    height:150px;
+    float: right;
+    bottom: 10%;
+    margin: 10%;
+}
+
+}
+
+#hermit {
 
 }

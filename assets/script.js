@@ -15,10 +15,10 @@ function closeNav() {
 
 // Random location for Herm when clicked
 
-$('#herm').click(function () {
+$("#herm").click(function () {
     var docHeight = $(document).height(),
         docWidth = $(document).width(),
-        $div = $('#herm'),
+        $div = $("#herm"),
         divWidth = $div.width(),
         divHeight = $div.height(),
         heightMax = docHeight - divHeight,
